@@ -2,16 +2,18 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Lon Hosford Basic Animation in Create JS</title>
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js">
+    <title>Peter's Great Web Page</title>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script>
         var stage;
 
         function init() {
-            stage = new createjs.Stage("stage-canvas")
-            alert("I am Amazing programmer")
+            stage = new createjs.Stage("stage-canvas");
+            alert(stage.canvas);
+
         }
     </script>
+
     <style>
         body {
             margin: 0;
@@ -30,10 +32,10 @@
     </style>
 </head>
 
-<body>
+<body onload="init();">
     <canvas id="stage-canvas" width="550" height="400">
-	This web browser does not support canvas.
-</canvas>
+	    This web browser does not support canvas.
+    </canvas>
 </body>
 
 </html>
